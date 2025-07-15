@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados Recebidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            padding: 40px;
+        }
+        .dados-container {
+            background-color: #fff;
+            padding: 25px 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dados-container">
+    <h2>Dados Recebidos</h2>
+    <p><span class="label">Nome:</span> <?= htmlspecialchars($nome) ?></p>
+    <p><span class="label">Idade:</span> <?= htmlspecialchars($idade) ?></p>
+    <p><span class="label">Data:</span> <?= htmlspecialchars($data) ?></p>
+    <p><span class="label">Sexo:</span> <?= htmlspecialchars($sexo) ?></p>
+</div>
+
+</body>
+</html>
